@@ -1,0 +1,39 @@
+.navigation {
+    background-color: #1d1d1d;
+    padding: 15px;
+    align-items: center;
+
+    .logo-container {
+        max-width: 100px;
+        margin-right: 50px;
+    }
+
+    .logo-barbearia {
+        max-width: 80px;
+        height: auto;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+  
+        li {
+            display: inline-block;
+            margin-right: 80px;
+    
+            a {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: large;
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                color: rgb(0, 147, 233);
+            }
+        }
+    }
+}
+  
