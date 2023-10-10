@@ -1,9 +1,14 @@
 .navigation {
-    background-color: #1d1d1d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0a031b;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 120%;
 
     ul {
         list-style: none;
@@ -14,7 +19,7 @@
         li {
             display: inline-block;
             margin-right: 80px;
-    
+
             a {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 font-size: large;
@@ -27,17 +32,16 @@
             }
         }
     }
+}
 
-    .logo-container {
-        display: flex;
-        align-items: center;
-      
-        .logo-barbearia {
-            max-width: 60px;
-            max-height: 60px;
-            margin-right: 10px;
-            filter: invert(100%);
-        }
+.logo-container {
+    display: flex;
+    align-items: center;
+
+    .logo-barbearia {
+        max-width: 60px;
+        max-height: 60px;
+        margin-right: 10px;
+        filter: invert(100%);
     }
 }
-  
