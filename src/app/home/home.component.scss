@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+.bg-container {
+    position: relative;
+
+    .bg {
+        width: 100%;
+        height: auto;
+    }
+      
+    .nome-empresa {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        padding: 10px;
+        left: 26%;
+        top: 3%;
+    
+        background-color: transparent;
+        color: white;
+
+        font-size: 35pt;
+    }
+    
+    .slogan {
+        font-family: 'Cinzel', serif;
+    
+        transform: translate(-50%, -50%);
+        position: absolute;
+        padding: 10px;
+        left: 32.8%;
+        top: 9%;
+    
+        background-color: transparent;
+        color: #e6bc92;
+    }
+
+    .slogan-2 {
+        font-family: 'Cinzel', serif;
+    
+        transform: translate(-50%, -50%);
+        position: absolute;
+        padding: 10px;
+        left: 19%;
+        top: 12%;
+    
+        background-color: transparent;
+        color: #977656;
+    }
+}
+  
