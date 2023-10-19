@@ -1,4 +1,9 @@
 .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     background-color: rgba(10, 9, 12);
     padding: 10px;
     display: flex;
@@ -28,16 +33,16 @@
             }
         }
     }
-}
 
-.logo-container {
-    display: flex;
-    align-items: center;
+    .logo-container {
+        display: flex;
+        align-items: center;
 
-    .logo-barbearia {
-        max-width: 60px;
-        max-height: 60px;
-        margin-right: 10px;
-        filter: invert(100%);
+        .logo-barbearia {
+            max-width: 60px;
+            max-height: 60px;
+            margin-right: 10px;
+            filter: invert(100%);
+        }
     }
 }

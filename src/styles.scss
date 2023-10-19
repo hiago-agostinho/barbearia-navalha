@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
-body {
-    margin: 0;
-    padding: 0;
-}
+html {
+    scroll-behavior: smooth;
 
-.titulo {
-    font-family: 'Abril Fatface', cursive;
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .titulo {
+        font-family: 'Abril Fatface', cursive;
+    }
 }

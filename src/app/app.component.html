@@ -12,12 +12,17 @@
 					<img src="assets/img/logo-barbearia.png" class="logo-barbearia">
 				</div>
 				<ul>
-					<li class="titulo"><a routerLink="/">Home</a></li>
-					<li class="titulo"><a routerLink="/horarios">Horários</a></li>
-					<li class="titulo"><a routerLink="/sobre-nos">Sobre Nós</a></li>
+					<li class="titulo"><a href="#section1">Home</a></li>
+					<li class="titulo"><a href="#section2">Horários</a></li>
+					<li class="titulo"><a href="#section3">Sobre Nós</a></li>
 				</ul>
 			</nav>
 		</div>
-		<app-home></app-home>
+		<div id="section1">
+			<app-home></app-home>
+		</div>
+		<div id="section2">
+			<app-horarios></app-horarios>
+		</div>
 	</body>
 </html>
