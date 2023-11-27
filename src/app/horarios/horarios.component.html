@@ -1,1 +1,32 @@
-<p>horarios works!</p>
+<div class="form">
+    <div class="horarios-form">
+        <h2>Agende seu horário</h2>
+        <form (ngSubmit)="submitForm()" #horarioForm="ngForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" [(ngModel)]="horarioNome" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" [(ngModel)]="horarioTelefone" mask="(00) 00000-0000" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" [(ngModel)]="horarioData" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" [(ngModel)]="horarioHora" required>
+            </div>
+            <div class="form-group">
+                <label for="barbeiro">Selecione o barbeiro:</label>
+                <select id="barbeiro" name="barbeiro" [(ngModel)]="horarioBarbeiro" required>
+                    <option *ngFor="let barbeiro of barbeiros" [value]="barbeiro">{{ barbeiro }}</option>
+                </select>
+            </div>
+            <div class="form-group bolo">
+                <button type="submit" [disabled]="!horarioForm.form.valid">Agendar</button>
+            </div>
+        </form>
+    </div>
+</div>
