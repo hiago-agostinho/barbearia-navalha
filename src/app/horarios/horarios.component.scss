@@ -31,7 +31,7 @@
             }            
     
             input, select {
-                color: #ffffff;
+                color: #000000;
                 font-size: large;
                 border-radius: 5px;
                 border-width: 1px;
@@ -58,6 +58,10 @@
                 &:disabled {
                     background-color: #ccc;
                     cursor: not-allowed;
+                }
+
+                &:hover {
+                    background-color: darken(#e29547, 10%);
                 }
             }
         }
