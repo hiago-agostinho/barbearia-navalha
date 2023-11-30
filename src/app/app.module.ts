@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { HorariosComponent } from './horarios/horarios.component';
 import { FormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HorariosComponent
+    HorariosComponent,
+    SobreNosComponent
   ],
   imports: [
     BrowserModule,

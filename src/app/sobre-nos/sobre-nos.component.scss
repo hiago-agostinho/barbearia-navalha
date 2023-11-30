@@ -1,0 +1,32 @@
+.form {
+    font-family: 'Cinzel', serif;
+
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .homem-elegante {
+        width: 100%;
+        float: left;
+    }
+
+    .texto-sobre-imagem {
+        margin-top: 290px;
+        position: absolute;
+        top: 70%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+
+        text-align: center;
+        color: white;
+        font-size: 10pt;
+
+        padding: 20px;
+        width: 80%;
+    }    
+
+    h1, p {
+        text-align: justify;
+    }
+}
