@@ -1,70 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
-.form {
-    background-color: #283875;
-    background-image: linear-gradient(0deg, #283875 1%, #0c090a 58%);
-}
+.container {
+    display: flex;
 
-.horarios-form {
-    max-width: 600px;
-    margin: auto;
-  
-    h2 {
-        color: #ffffff;
-        font-family: 'Cinzel', serif;
-        text-align: center;
+    .barbeiro-cadastro {
+        float: left;
+        width: 50%;
     }
-  
-    form {
-        display: flex;
-        flex-direction: column;
     
-        .form-group {
-            margin-bottom: 12px;
+    .form {
+        background-color: #283875;
+        background-image: linear-gradient(0deg, #283875 1%, #0c090a 58%);
+    }
     
-            label {
-                color: #ffffff;
-                font-family: 'Cinzel', serif;
-                margin-bottom: 5px;
-                display: block;
-                font-weight: bold;
-            }            
-    
-            input, select {
-                color: #000000;
-                font-size: large;
-                border-radius: 5px;
-                border-width: 1px;
-                padding: 15px;
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            button {
-                margin-left: 420px;
-                font-family: 'Cinzel', serif;
-                font-weight: bold;
-
-                border-radius: 5px;
-                padding: 12px;
-
-                background-color: #e29547;
-                color: #ffffff;
-
-                width: 30%;
-                border: none;
-                cursor: pointer;
-    
-                &:disabled {
-                    background-color: #ccc;
-                    cursor: not-allowed;
+    .horarios-form {
+        float: right;
+        width: 50%;
+        margin: auto;
+      
+        h2 {
+            color: #ffffff;
+            font-family: 'Cinzel', serif;
+            text-align: center;
+        }
+      
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        
+            .form-group {
+                margin-bottom: 12px;
+        
+                label {
+                    color: #ffffff;
+                    font-family: 'Cinzel', serif;
+                    margin-bottom: 5px;
+                    display: block;
+                    font-weight: bold;
+                }            
+        
+                input, select {
+                    color: #000000;
+                    font-size: large;
+                    border-radius: 5px;
+                    border-width: 1px;
+                    padding: 15px;
+                    width: 200%;
+                    box-sizing: border-box;
                 }
-
-                &:hover {
-                    background-color: darken(#e29547, 10%);
+    
+                button {
+                    font-family: 'Cinzel', serif;
+                    font-weight: bold;
+    
+                    border-radius: 5px;
+                    padding: 12px;
+    
+                    background-color: #e29547;
+                    color: #ffffff;
+    
+                    width: 30%;
+                    border: none;
+                    cursor: pointer;
+        
+                    &:disabled {
+                        background-color: #ccc;
+                        cursor: not-allowed;
+                    }
+    
+                    &:hover {
+                        background-color: darken(#e29547, 10%);
+                    }
                 }
             }
         }
     }
-  }
-  
+}
