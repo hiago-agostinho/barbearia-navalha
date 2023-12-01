@@ -1,76 +1,95 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 .container {
+    background: rgb(10, 9, 12);
+    background: linear-gradient(0deg, rgb(21, 16, 22) 30%, rgb(6, 11, 37) 70%);
     display: flex;
 
     .barbeiro-cadastro {
         float: left;
-        width: 50%;
+        width: 45%;
     }
-    
-    .form {
-        background-color: #283875;
-        background-image: linear-gradient(0deg, #283875 1%, #0c090a 58%);
-    }
-    
-    .horarios-form {
-        float: right;
-        width: 50%;
-        margin: auto;
-      
-        h2 {
-            color: #ffffff;
-            font-family: 'Cinzel', serif;
-            text-align: center;
-        }
-      
-        form {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        
-            .form-group {
-                margin-bottom: 12px;
-        
-                label {
-                    color: #ffffff;
-                    font-family: 'Cinzel', serif;
-                    margin-bottom: 5px;
-                    display: block;
-                    font-weight: bold;
-                }            
-        
-                input, select {
+
+    .form-box {
+        width: 420px;
+        height: 450px;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: -3px 8px 13px 4px rgba(0,0,0,0.7);
+        position: absolute;
+        top: 170%;
+        left: 74%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+
+        .form {
+            .horarios-form {
+                text-align: center;
+                width: 80%;
+                margin: auto;
+
+                h2 {
                     color: #000000;
-                    font-size: large;
-                    border-radius: 5px;
-                    border-width: 1px;
-                    padding: 15px;
-                    width: 200%;
-                    box-sizing: border-box;
-                }
-    
-                button {
                     font-family: 'Cinzel', serif;
-                    font-weight: bold;
-    
-                    border-radius: 5px;
-                    padding: 12px;
-    
-                    background-color: #e29547;
-                    color: #ffffff;
-    
-                    width: 30%;
-                    border: none;
-                    cursor: pointer;
-        
-                    &:disabled {
-                        background-color: #ccc;
-                        cursor: not-allowed;
-                    }
-    
-                    &:hover {
-                        background-color: darken(#e29547, 10%);
+                    text-align: center;
+                    margin-top: -30px;
+                }
+
+                form {
+                    margin-top: -10px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .form-group {
+                        margin-bottom: 15px;
+
+                        label {
+                            width: 100%;
+                            text-align: initial;
+                            margin-right: 150px;
+                            color: #000000;
+                            font-family: 'Cinzel', serif;
+                            margin-bottom: 5px;
+                            display: block;
+                            font-weight: bold;
+                        }            
+
+                        input, select {
+                            margin-right: 150px;
+                            color: #000000;
+                            font-size: medium;
+                            border-radius: 5px;
+                            border-width: 1px;
+                            padding: 10px;
+                            width: 100%; 
+                            box-sizing: border-box;
+                        }
+
+                        button {
+                            font-family: 'Cinzel', serif;
+                            font-weight: bold;
+
+                            border-radius: 5px;
+                            padding: 12px;
+                            margin-left: 235px;
+
+                            background-color: #e29547;
+                            color: #ffffff;
+
+                            width: 30%;
+                            border: none;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: darken(#e29547, 10%);
+                            }
+
+                            &:disabled {
+                                background-color: #ccc;
+                                cursor: not-allowed;
+                            }
+                        }
                     }
                 }
             }
