@@ -31,6 +31,10 @@
             a:hover {
                 color: rgb(0, 147, 233);
             }
+
+            &.active a {
+                color: rgb(0, 147, 233);
+            }
         }
     }
 

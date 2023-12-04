@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ScrollSpyDirective } from './directives/rolagem.directive';
 import { HomeComponent } from './home/home.component';
 import { HorariosComponent } from './horarios/horarios.component';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +15,8 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     AppComponent,
     HomeComponent,
     HorariosComponent,
-    SobreNosComponent
+    SobreNosComponent,
+    ScrollSpyDirective
   ],
   imports: [
     BrowserModule,
