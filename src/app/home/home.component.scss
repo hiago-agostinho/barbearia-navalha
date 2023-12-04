@@ -1,8 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
-.bg-container {
+.container {
+    background-color: palevioletred;
     position: relative;
+    line-height: 0;
 
     .bg {
         margin-top: 80px;
