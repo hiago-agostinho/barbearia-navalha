@@ -14,7 +14,7 @@ export class ScrollSpyDirective {
             const sectionPosition = section.getBoundingClientRect();
             const id = section.id;
 
-            if (sectionPosition.top <= 50 && sectionPosition.bottom >= 10) {
+            if (sectionPosition.top <= 50) {
                 const navLink = document.querySelector(`a[href="#${id}"]`);
 
                 if (navLink) {
